@@ -29,9 +29,10 @@ SceneEffect {
 
     // Read by Overview.qml, named as on Plasma's OverviewEffect.
     readonly property int animationDuration: Kirigami.Units.longDuration * 1.5
-    readonly property bool ignoreMinimized: configuration.IgnoreMinimized
-    readonly property bool filterWindows: configuration.FilterWindows
-    readonly property bool organizedGrid: configuration.OrganizedGrid
+    // Plasma's Overview defaults.
+    readonly property bool ignoreMinimized: false
+    readonly property bool filterWindows: true
+    readonly property bool organizedGrid: true
     readonly property real gestureThreshold: 0.1
     readonly property real overviewPartialActivationFactor: overviewState.partialActivationFactor
     readonly property bool overviewGestureInProgress: overviewState.inProgress
